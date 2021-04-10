@@ -1,0 +1,134 @@
+#pos_filters {
+	height:32px;
+}
+#pos_filters .animated{
+	animation: 1s;		
+}
+#pos_filters select{
+	padding: 5px;
+	margin: 0px 10px;
+	max-width: 100%;
+	min-width: 200px;
+	width: 30%;
+	float: left;
+}
+#pos_filters select:last{	
+	margin-right: 0px;	
+}
+
+
+/* POS LIST ITEMS */
+.pos_list-item{
+  border: 1px solid #eee;
+  padding: 5px;
+  list-style: none;
+}
+
+/*.pos-marker {
+  font-family: "points_of_saleregular" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}*/
+
+/* .pos-marker{
+  font-family: 'points_of_saleregular' !important;
+} */
+.pos-marker {
+  width: 100%;
+  display: inline-block;
+  height: 75px;
+}
+.pos-marker:before {
+  content: "@";
+  font-family: "points_of_saleregular" !important;
+  font-size: 100px;
+  vertical-align: baseline;  
+  /* width: 81px; */
+  /* height: 90px; */
+  line-height: 65px;
+}
+
+
+
+.pos_list-item h4{
+  margin: 0px;
+  padding: 0px;
+  line-height: 100%;
+}
+.pos_list-item table {
+  font-size: 80%;
+  margin: 0px !important;
+  width: 100%;
+  text-align: left;
+}
+.pos_list-item table td { border-bottom: none !important; text-align: left; padding: 6px; vertical-align: top; }
+.pos_list-item table tbody tr td{
+  vertical-align: top !important;
+}
+.pos_address{
+    text-align: left;
+  	
+    margin-bottom: 0px !important;
+    line-height: 130%;
+}
+
+/* LOADING */
+.pos_loading {	  
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  font-size: 16px;
+  float: left;  
+}
+
+.pos_loading > div {
+  background-color: #EE7E42;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.pos_loading .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.pos_loading .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.pos_loading .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.pos_loading .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.75) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.75);
+    -webkit-transform: scaleY(0.75);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}

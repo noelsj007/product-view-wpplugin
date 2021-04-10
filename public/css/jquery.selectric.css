@@ -1,0 +1,33 @@
+.selectricWrapper {position: relative; margin: 4px 5px 10px 0; width: 235px; cursor: pointer;}
+.selectricResponsive {width: 100%;}
+.selectric {border: 0px solid #DDD; background: #EF7F42; position: relative; border-radius: 5px;}
+.selectric .label {display: block; white-space: nowrap; overflow: hidden; margin: 0 39px 0 0; padding: 11px; font:900 14px 'Lato', arial; line-height: 18px; color: #FFF; min-height: 18px; text-transform:uppercase;}
+.selectric .button {display: block; position: absolute; right: 0; top: 0; width: 39px; height: 40px; color: #BBB; text-align: center; text-indent:50px; overflow:hidden; background:url(../imgs/selectricButton.png)}
+/*.selectric .button:after {content: " "; position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; width: 0; height: 0; border: 4px solid transparent; border-top-color: #BBB; border-bottom: none;}*/
+.selectricHover .selectric {border-color: #CCC;}
+.selectricHover .selectric .button {color: #888;}
+.selectricHover .selectric .button:after {border-top-color: #888;}
+.selectricOpen {z-index: 9999;}
+.selectricOpen .selectric {border-color: #CCC; background: #EF7F42; z-index: 9999;}
+.selectricOpen .selectricItems {display: block;}
+.selectricDisabled {filter: alpha(opacity=50); opacity: 0.5; cursor: default; -webkit-touch-callout: none; user-select: none;}
+.selectricHideSelect {position: relative; overflow: hidden; width: 0; height: 0;}
+.selectricHideSelect select {position: absolute; left: -100%; display: none;}
+.selectricInput {position: absolute !important; top: 0 !important; left: 0 !important; overflow: hidden !important; clip: rect(0, 0, 0, 0) !important; margin: 0 !important; padding: 0 !important; width: 1px !important; height: 1px !important; outline: none !important; border: none !important; *font: 0/0 a !important; background: none !important;}
+.selectricTempShow {position: absolute !important; visibility: hidden !important; display: block !important;}
+.selectricItems {display: none; position: absolute; overflow: auto; top: 100%; left: 0; z-index: 9998; border-radius: 5px; padding-top:20px; margin-top:11px; background:url(../imgs/selectricItemsBG.png) 0px 0px no-repeat;}
+.selectricItems ul{list-style: none; padding:0px 5px 4px 5px; font-size: 12px; line-height: 20px; min-height: 20px; background: #EF7F42; margin:0;}
+.selectricItems li {display: block; padding: 5px 10px; margin:1px 0px; border-radius: 5px; cursor: pointer; opacity:0.5; list-style: none; font:700 12px/20px "Lato", arial; color:#FFF; min-height: 20px; background-color: #AE6035; text-transform:uppercase;}
+.selectricItems li.selected {opacity:1;}
+.selectricItems li:hover {opacity:0.7;}
+.selectricItems li.disabled { opacity:0.5; cursor: default;}
+
+.customOptions .selectricItems .ico {
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  *display: inline;
+  margin: 0 6px 0 0;
+  float:right;
+  text-transform:lowercase;
+}

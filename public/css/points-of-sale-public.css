@@ -1,0 +1,148 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ #points_of_sale {
+	width: 100%;
+	height: 665px;
+	overflow: hidden;
+	/* background-color: #fcfcfc; */
+}
+#points_of_sale > .blockTop {
+	/*width: 810px;*/
+	
+	min-height: 78px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#points_of_sale > .blockTop > p {
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	text-align: center;
+	color: #666;
+}
+#points_of_sale > .blockTop > p > b {
+	font-weight: 900;
+}
+#points_of_sale > .blockTop > p > span {
+	font-size: 35px;
+	font-weight: 900;
+	color: #EF7F42;
+}
+#maps {
+	position: relative;
+	width: 100%;
+	height: 587px;
+}
+#maps > .menuBox {
+	position: absolute;
+	top: -24px;
+	left: 0;
+	width: 100%;
+	height: 43px;
+	background-image: url(../images/bgTitleBottom.png);
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+#maps > .menuBox > .block {
+	width: 810px;
+	margin: 0 auto;
+	text-align: center;
+}
+#maps > .menuBox > .block > .selectricWrapper {
+	display: inline-block;
+	text-align: left;
+}
+#maps > .menuBox > .block > .selectricWrapper .ico {
+	float: right;
+}
+#maps > .menuBox ul li{
+    background-image: none;    
+}
+    
+#maps > .map {
+	height: 100%;
+}
+#maps > .shadow {
+	/* position: absolute; */
+	/* bottom: 0; */
+	/* left: 0; */
+	/* width: 100%; */
+	/* height: 26px; */
+	/* background-image: url(../images/bgShadow.png); */
+	/* background-position: top left; */
+	/* background-repeat: repeat-x; */
+}
+.infoBox {
+	width: 260px;
+	border-top: 1px solid #d5d5d5;
+	border-bottom: 1px solid #d5d5d5;
+	border-radius: 5px;
+	font-family: Lato, sans-serif;
+	font-size: 15px;	
+	color: white;
+	background-color: #EF7F42;
+}
+.infoBox:after {
+	content: '';
+	position: absolute;
+	right: 34px;
+	bottom: -13px;
+	width: 0;
+	height: 0;
+	border-left: 14px solid transparent;
+	border-top: 13px solid #EF7F42;
+	border-right: 14px solid transparent;
+}
+.infoBox .title {
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	padding: 11px 16px 11px 16px;
+	/* padding-left: 36px; */
+	/* padding-right: 16px; */
+	font-family:  'proxima_nova_rgbold';
+	font-size: 18px;
+	color: #EF7F42;
+	background-color: #FFFFFF;
+	/* 	background-image: url(../images/pin.png); */
+	background-repeat: no-repeat;
+	background-position: 14px center;
+	line-height: 1;
+}
+.infoBox p {
+	font-family:  'proxima_nova_rgregular';
+	margin: 11px 16px;
+	line-height: 1.2;
+	word-break: break-word;
+}
+
+
+.selectricItems {    
+    overflow: scroll;    
+}
+
+/*RESPONSIVENESS*/
+@media screen and (max-width: 423px) {
+	#maps{
+		max-height: 300px;
+	}
+    #maps > .menuBox {
+		position: absolute;
+		top: 20px;
+		left: 0;
+		width: 100%;
+		height: auto;
+		/* background-image: url(../images/bgTitleBottom.png); */
+		background-position: top center;
+		background-repeat: no-repeat;
+	}
+	#maps > .menuBox > .block {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#maps > .menuBox > .block > .selectricWrapper {
+		float: left;
+	}
+}
